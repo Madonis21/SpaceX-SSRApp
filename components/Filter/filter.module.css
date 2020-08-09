@@ -1,0 +1,10 @@
+.buttonEl{
+    margin: 5px 15px;
+    border: none;
+    background-color: lightgreen;
+    font-weight: bold;
+}
+.buttonEl:active{
+    background-color: darkgreen;
+    border: none;
+}
