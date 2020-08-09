@@ -5,3 +5,10 @@
 .launchDetailContainer {
   padding: 10px;
 }
+.missionName {
+  color: blue;
+  font-weight: bold;
+}
+.missionText {
+  font-weight: bold;
+}
