@@ -12,7 +12,9 @@ body {
   box-sizing: border-box;
 }
 [class*="col"] {
-  border: 5px solid grey;
+  border: 5px solid grey; 
+  border-top: none;
+  border-right: none;
 }
 .row {
   background: white;
