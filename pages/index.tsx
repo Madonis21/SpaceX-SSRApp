@@ -49,10 +49,10 @@ async function getLaunchService({year, launchSuccess, landingSuccess}) {
   return res;
 }
 export async function getServerSideProps(context) {
-  // const res = await fetch(`https://api.spacexdata.com/v3/launches?limit=100`);  
-  // const data = await res.json();
-  const res = await fetch(environment.baseApiUrl + "api/launches");
+  const res = await fetch(`https://api.spacexdata.com/v3/launches?limit=100`);  
   const data = await res.json();
+  // const res = await fetch(environment.baseApiUrl + "api/launches");
+  // const data = await res.json();
   return { props: { data } }
 
 }
