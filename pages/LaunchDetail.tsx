@@ -4,8 +4,10 @@ import { MissionData } from '../models/model';
 const LaunchDetail = ({data}: {data: MissionData}) => {
      
     return(
-        <div className={utilStyles.launchDetailContainer}>  
-                    <div className={utilStyles.imageContainer}>
+         <div className={utilStyles.launchDetailContainer}>  
+            {data && 
+                <div>
+            <div className={utilStyles.imageContainer}>
                     <img width="80" height="160" src={data.links.mission_patch}></img>
                     </div>
                     <div>{data.mission_name}</div>
@@ -19,7 +21,8 @@ const LaunchDetail = ({data}: {data: MissionData}) => {
                                 && data.rocket.first_stage.cores
                                 && data.rocket.first_stage.cores.length 
                                 && data.rocket.first_stage.cores[0].land_success}</div>
-
+                   </div>
+            }
         </div>
     )
 }
