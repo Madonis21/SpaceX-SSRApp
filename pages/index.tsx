@@ -53,6 +53,7 @@ async function getLaunchService({ year, launchSuccess, landingSuccess }) {
 export async function getServerSideProps(context) {
   const res = await fetch(environment.apiUrl);
   const data = await res.json();
+  // To Do: SEO improvement for Images for /pages/api/launches
   // const res = await fetch(environment.baseApiUrl + "api/launches");
   // const data = await res.json();
   return { props: { data } }
